@@ -1,0 +1,305 @@
+﻿@charset "utf-8";
+/*
+#region !!====={ Version Information }=====!!
+// %~%@ < 1.2001 > @%~%     // File Version
+// %~%# < 12/1/2014 > #%~%   // File Mod Date
+// %~%! < GenCart Content > !%~%    // Core Module
+// %~%^ < 1.2000 > ^%~%     // Minimum Core Version
+#endregion ==================================
+*/
+
+/* --------------------------------------------------------------------------- */
+/* Cart Display Page */
+/* --------------------------------------------------------------------------- */
+div#gc_cartWrapper {
+    width: 66%;
+    float: left;
+    background-color: #fff;
+    margin-bottom: 60px;
+}
+
+div#gc_cartWrapper h4 {display:block; float:left; width:100%; margin:20px 0;}
+div#upperCheckout {
+    width: 100%;
+    float: left;
+}
+
+.orderSumTitle {
+    width: 100%;
+    float: left;
+    padding: 1%;
+    color:#00AEEF;
+    font-family: anton;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    padding-bottom:10px; 
+    border-bottom: 1px solid #3b3936;
+}
+
+div#total {
+    width: 30%;
+    float: left;
+    padding: 0 1% 1%;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: "maven_pro";
+}
+
+span#gc_TopTotal {
+    font-family: "open_sansregular";
+    color: #43a047;
+    padding-left: 5px;
+}
+div#upperButtonCheckout {
+    width: 70%;
+    float: left;
+}
+
+.topCheckoutContain{width:100%;float:left;}
+
+.topCheckoutContain a {
+    display: block;
+    float: right;
+    padding: 10px;
+    background-color: #962530;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "open_sansbold";
+}
+
+.topCheckoutContain a:hover{background-color:#0099ff;}
+
+div#gc_cart {
+    width: 100%;
+    float: left;
+}
+
+.cartHeader {
+    width: 100%;
+    float: left;
+}
+
+.itemRow {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-left:1px solid #ccc;
+    padding-bottom: 10px;
+    padding:15px;
+    position:relative; 
+    display:block;
+    background:#fff;
+    min-height:90px;
+}
+
+div#itemImage {
+    width: 30%;
+    float: left;
+}
+
+div#itemDetails {
+    width: 40%;
+    float: left;
+}
+
+div#itemTotal {
+    width: 30%;
+    float: left;
+}
+
+.cartImage {
+    width: 27%;
+    font-family: "open_sansbold";
+    float: left;
+    margin-right:5px;
+}
+
+.cartProductName {
+    width: 40%;
+    float: left;
+    font-family: "open_sansbold";margin-right:2%;
+}
+
+.productCartTotal {
+
+    padding: 1%;
+    color: #43a047;
+    font-family: "open_sansbold";
+}
+
+.cartHead {
+    background-color: #8b0d19;
+    padding: 2%;
+    text-transform: uppercase;
+    font-family: "open_sansbold";
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+div#gc_CouponCodeTitleContainer {
+    color: red;
+    font-size: 13px;
+}
+
+.stepTwoCheckoutAddressSection {
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.billingAddress {
+    width: 48%;
+    float: left;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px #8c8c8c;
+    margin-right: 2%;
+    padding: 2%;
+    font-family: 'maven_pro';
+}
+
+.shippingAddress{
+    width: 48%;
+    float: left;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px #8c8c8c;
+    padding: 2%;
+     font-family: 'maven_pro';
+}
+
+.gc_checkoutStep2 {
+    float: left;
+    width: 100%;
+}
+
+
+table.gc_cartTableStepTwo {
+    width: 100%;
+    background-color: #fff;
+    padding: 1%;
+}
+
+
+
+tr.gc_cartTableStepTwoHeaders th {
+    background-color: #8b0d19;
+    padding: 2%;
+    text-transform: uppercase;
+    font-family: "open_sansbold";
+    color: #fff;
+    border-radius:0px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.gc_cartTableStepTwo tr td {
+    padding: 2%;
+    text-transform: uppercase;
+    font-family: "open_sansbold";
+    font-size: 12px;
+    font-weight: 100;
+}
+
+table.gc_cartTableStepTwo tr.gc_bgcolor2.gc_border3b.gc_SoftGradient.gc_cartDetails td.gc_cartImage img.gc_prodImgTag {
+    width: 90%;
+}
+
+.orderDetailTitle {
+    font-size: 30px;
+    font-family: "open_sansbold";
+    font-weight: 700;
+    margin: 10px 0;
+    color: #962530;
+}
+
+
+div#paymentForm {
+    width: 100%;
+    float: left;
+    background-color: transparent;
+    padding: 0;
+    float: left;
+    margin-top: 20px;
+}
+
+div#cartBottom {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+    margin-top: 3%;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px #8c8c8c;
+}
+.orderTotalHead,
+.orderStatusHeading
+{
+    width:100%;
+    float:left;
+    color: #962530;
+    padding-left:2%;
+    font-family: anton;
+    font-size: 22px;
+    text-transform: uppercase;
+ }
+
+p.gc_OrderStatus {
+    color: #4db6ac;
+    padding-left: 56px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+span.gc_HeadingL
+{
+    color: #962530;
+    padding-left: 56px;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+
+a#gc_continueShoppingCOresponse {
+    padding: 10px;
+    margin-left: 49px;
+    background-color: #515151;
+    cursor:pointer;
+    text-shadow: 1px 1px 3px #555;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+a#gc_continueShoppingCOresponse:hover{background-color:#00aeef;}
+
+#cartBottomTwo {
+    width: 50%;
+    margin-left: 2%;
+    margin-top: 5px;
+    padding: 1%;
+    float: left;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px #8c8c8c;
+}
+
+
+div.gc_AddressRoot {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

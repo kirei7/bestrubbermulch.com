@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*
+#region !!====={ Version Information }=====!!
+// %~%@ < 1.2000 > @%~%     // File Version
+// %~%# < 7/7/2014 > #%~%   // File Mod Date
+// %~%! < GenCart Content > !%~%    // Core Module
+// %~%^ < 1.2000 > ^%~%     // Minimum Core Version
+#endregion ==================================
+*/
+
+/* --------------------------------------------------------------------------- */
+/* Address Edit */
+/* --------------------------------------------------------------------------- */
+div.gc_addressEdit div.gc_editorLabel {
+	margin-top:10px;
+}
